@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>MUSIC AT A CLICK</title>
+        <link rel="stylesheet" href="music.css">
+        <link href='https://fonts.googleapis.com/css?family=Bangers' rel='stylesheet'>
+        <link href="page2.html">
+    </head>
+    <body>
+        <h1></h1>
+        <div class="more"><a href="page2.html">MORE</a></div>
+        <a href="#" class="red" onclick="playAudio(1)"></a>
+        <a href="#" class="blue" onclick="playAudio(2)"></a> 
+        <a href="#" class="green" onclick="playAudio(3)"></a>
+        <a href="#" class="violet" onclick="playAudio(4)"></a>
+    </body>
+    <script>
+        function playAudio(a){
+            if(a==1)
+            {
+			var p = new Audio('button1.mp3');
+            }
+            if(a==2)
+            {
+			var p = new Audio('button2.mp3');
+            }	
+            if(a==3)
+            {
+			var p = new Audio('button3.mp3');
+            }
+            if(a==4)
+            {
+			var p = new Audio('button4.mp3');
+            }
+            p.play();					
+		}
+    </script>
+</html>
