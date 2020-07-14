@@ -1,0 +1,39 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+/*.fade{
+    display: none;
+}*/
+.slideshow{
+    margin: auto;
+    position: relative;
+    max-width: 1000px;
+}
+.text{
+    text-decoration: none;
+    font-weight: bold;
+    color:red ;
+    width: 100%;
+    font-size: 15px;
+    
+    text-align: center;
+}
+.prev{
+    left: 0;
+    top: 50%; 
+}
+.next{
+    right: 0;
+    top: 50%;
+}
+.prev,.next{
+    position: absolute;
+    font-weight: bolder;
+    padding: 1.5em;
+    font-size: 25px;
+    cursor: pointer;
+}
+.prev:hover,.next:hover{
+    background-color: darkgray;
+}

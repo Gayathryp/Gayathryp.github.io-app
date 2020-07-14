@@ -1,0 +1,56 @@
+<head>
+    <title>Nature sounds</title>
+    <link rel="stylesheet" href="nature.css"> 
+</head>
+<body>
+    <div class="slideshow">
+        <div class="fade">
+            <div class="number">1/4</div>
+            <img src="images/rain.jpg.jpg" style="width: 100%;">
+            <a href="#" class="text" onclick="play(1)">START MUSIC</a>
+        </div>
+        <div class="fade">
+            <div class="number">2/4</div>
+            <img src="images/fire.jpg.jpg" style="width: 100%;">
+            <a href="#" class="text" onclick="play(2)">START MUSIC</a>
+        </div>
+        <div class="fade">
+            <div class="number">3/4</div>
+            <img src="images/lake.jpg.jpg" style="width: 100%;">
+            <a href="#" class="text" onclick="play(3)">START MUSIC</a>
+        </div>
+        <div class="fade">
+            <div class="number">4/4</div>
+            <img src="images/ocean.jpg.jpg" style="width: 100%;">
+            <a href="#" class="text" onclick="play(4)">START MUSIC</a>
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    </div>
+</body>
+<script>
+    function play(a){
+            if(a==1)
+            {    
+			var p = new Audio('rain.wav');
+            p.play();
+            }
+            if(a==2)
+            {   
+			var p = new Audio('campfire.wav');
+            p.play();
+            }	
+            if(a==3)
+            {
+			var p = new Audio('lake.wav');
+            p.play();
+            }
+            if(a==4)
+            {    
+			var p = new Audio('ocean.wav');
+            p.play();
+            }
+            				
+		}
+</script>

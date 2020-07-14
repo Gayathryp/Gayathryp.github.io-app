@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.more {
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+    font-size:25px ;
+    margin-top:1.5em ;
+}
+.more a{
+    background-color: lightgrey;
+    padding: 0.5em;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+    border-radius: 15%;
+}
+h1{
+    color: brown;
+    font-size: 65px;
+    margin-top: 2em;
+    text-align: center;
+    font-family: 'Bangers';
+}
+h1::after{
+    content: "";
+    animation: move 8s infinite linear;
+    animation-fill-mode: forwards;
+}
+
+@keyframes move{
+    0%{
+        content: "M";
+    }
+    8%{
+        content: "MU";
+    }
+    16%{
+        content:"MUS" ;
+    }
+    24%{
+        content:"MUSI" ;
+    }
+    32%{
+        content:"MUSIC" ;
+    }
+    40%{
+        content:"MUSIC A" ;
+    }
+    48%{
+        content:"MUSIC AT" ;
+    }
+    56%{
+        content:"MUSIC AT A" ;
+    }
+    64%{
+        content:"MUSIC AT A C" ;
+    }
+    72%{
+        content:"MUSIC AT A CL" ;
+    }
+    80%{
+        content:"MUSIC AT A CLI" ;
+    }
+    89%{
+        content:"MUSIC AT A CLIC" ;
+    }
+    100%{
+        content:"MUSIC AT A CLICK" ;
+    }
+}
+.red{
+    width: 25%;
+    height: 45%;
+    background-color: red;
+    position: absolute;
+    bottom: 0em;
+}
+.blue{
+    width: 25%;
+    height: 45%;
+    left: 25%;
+    background-color:blue;
+    position: absolute;
+    bottom: 0em;
+}
+.green{
+    width: 25%;
+    height: 45%;
+    left: 50%;
+    background-color: green;
+    position: absolute;
+    bottom: 0em;
+}
+.violet{
+    width: 25%;
+    height: 45%;
+    left: 75%;
+    background-color: violet;
+    position: absolute;
+    bottom: 0em;
+}
