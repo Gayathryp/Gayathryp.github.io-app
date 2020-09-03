@@ -1,32 +1,34 @@
 <head>
     <title>Nature sounds</title>
-    <link rel="stylesheet" href="nature.css"> 
+    <link rel="stylesheet" href="nature.css">
+    <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> 
 </head>
 <body>
     <div class="slideshow">
-        <div class="fade">
-            <div class="number">1/4</div>
-            <img src="images/rain.jpg.jpg" style="width: 100%;">
-            <a href="#" class="text" onclick="play(1)">START MUSIC</a>
-        </div>
-        <div class="fade">
-            <div class="number">2/4</div>
-            <img src="images/fire.jpg.jpg" style="width: 100%;">
+        <div class="row-sm-6">
+            <div class="col-sm-6 ">
+            <img src="images/rain.jpg.jpg" style="width:100% ; height: 425px;">
+            <a href="#" class="text"  onclick="play(1)">START MUSIC</a>
+            </div> 
+            <div class="col-sm-6 ">
+            <img src="images/fire.jpg.jpg" style="width:100% ;height: 425px;">
             <a href="#" class="text" onclick="play(2)">START MUSIC</a>
-        </div>
-        <div class="fade">
-            <div class="number">3/4</div>
-            <img src="images/lake.jpg.jpg" style="width: 100%;">
+            </div> 
+        </div> 
+        <div class="row-sm-6"> 
+            <div class="col-sm-6 "> 
+            <img src="images/lake.jpg.jpg" style="width:100% ;height: 425px;" >
             <a href="#" class="text" onclick="play(3)">START MUSIC</a>
-        </div>
-        <div class="fade">
-            <div class="number">4/4</div>
-            <img src="images/ocean.jpg.jpg" style="width: 100%;">
+            </div>
+            <div class="col-sm-6 ">
+            <img src="images/ocean.jpg.jpg" style="width:100% ;height: 425px;">
             <a href="#" class="text" onclick="play(4)">START MUSIC</a>
+            </div>
         </div>
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
     </div>
 </body>
 <script>
